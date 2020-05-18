@@ -5,10 +5,10 @@ allows users to save favorites, play trailers, and read user reviews.
 This app utilizes core Android user interface components and fetches movie information using themoviedb.org web API.
 
 ## Highlights
-1.MVVM Architectural pattern
-2.Room for Offline Caching
-3.LiveData
-4.VieModel
+### 1.MVVM Architectural pattern
+### 2.Room for Offline Caching
+### 3.LiveData
+### 4.ViewModel
 
 
 
