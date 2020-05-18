@@ -18,7 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mukhtarinc.movieapp.R;
+import com.mukhtarinc.dredge.R;
 import com.mukhtarinc.dredge.common.Constant;
 import com.mukhtarinc.dredge.data.remote.PopularMoviesResponse;
 import com.mukhtarinc.dredge.data.remote.ApiService;

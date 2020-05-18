@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mukhtarinc.movieapp.R;
+import com.mukhtarinc.dredge.R;
 import com.mukhtarinc.dredge.model.Movie;
 import com.squareup.picasso.Picasso;
 

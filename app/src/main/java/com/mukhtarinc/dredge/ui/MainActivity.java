@@ -1,4 +1,4 @@
-package com.mukhtarinc.dredge;
+package com.mukhtarinc.dredge.ui;
 
 import android.content.Intent;
 import android.os.Build;
@@ -17,6 +17,7 @@ import com.mukhtarinc.dredge.model.Movie;
 import com.mukhtarinc.dredge.ui.DetailActivity;
 import com.mukhtarinc.dredge.ui.ImageClickListener;
 import com.mukhtarinc.dredge.ui.ViewPagerTabAdapter;
+import com.mukhtarinc.dredge.R;
 
 public class MainActivity extends AppCompatActivity implements ImageClickListener {
 

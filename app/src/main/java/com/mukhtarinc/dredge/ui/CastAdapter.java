@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.makeramen.roundedimageview.RoundedImageView;
-import com.mukhtarinc.movieapp.R;
+import com.mukhtarinc.dredge.R;
 import com.mukhtarinc.dredge.model.Cast;
 import com.squareup.picasso.Picasso;
 
@@ -54,7 +54,7 @@ public class CastAdapter extends RecyclerView.Adapter<CastAdapter.CastViewHolder
 
     @Override
     public int getItemCount() {
-        return casts.size();
+        return 5;
     }
 
     void setCasts(List<Cast> data){

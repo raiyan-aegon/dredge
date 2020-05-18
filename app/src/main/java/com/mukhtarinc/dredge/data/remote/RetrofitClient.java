@@ -1,6 +1,6 @@
 package com.mukhtarinc.dredge.data.remote;
 
-import com.mukhtarinc.movieapp.BuildConfig;
+import com.mukhtarinc.dredge.BuildConfig;
 import com.mukhtarinc.dredge.common.Constant;
 
 import java.util.concurrent.TimeUnit;

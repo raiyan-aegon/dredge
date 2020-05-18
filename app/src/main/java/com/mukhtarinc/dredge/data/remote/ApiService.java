@@ -17,4 +17,11 @@ public interface ApiService  {
     @GET("{movie_id}/credits")
     Call<CastResponse> movieCast(@Path("movie_id") String movie_id,@Query("api_key") String api_key);
 
+
+    @GET("{movie_id}/videos")
+    Call<TrailersResponse>  movietrailers(@Path("movie_id") String movie_id,@Query("api_key") String api_key);
+
+
+
+
 }

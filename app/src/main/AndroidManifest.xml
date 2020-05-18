@@ -13,13 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.mukhtarinc.dredge.ui.DetailActivity"
-            android:parentActivityName="com.mukhtarinc.dredge.MainActivity"
-            tools:ignore="UnusedAttribute">
-
-        </activity>
         <activity
-            android:name="com.mukhtarinc.dredge.MainActivity"
+            android:name=".ui.DetailActivity"
+            android:parentActivityName=".ui.MainActivity"
+            tools:ignore="UnusedAttribute"></activity>
+        <activity
+            android:name=".ui.MainActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">

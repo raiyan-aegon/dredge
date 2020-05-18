@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mukhtarinc.movieapp.R;
+import com.mukhtarinc.dredge.R;
 import com.mukhtarinc.dredge.model.TopRatedMovie;
 import com.squareup.picasso.Picasso;
 
