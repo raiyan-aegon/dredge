@@ -1,0 +1,2 @@
+rootProject.name='Dredge'
+include ':app'

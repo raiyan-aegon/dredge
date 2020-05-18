@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Dredge</string>
+    <string name="app_title">DREDGE</string>
+    <string name="popular">Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="favorites">Favorites</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="transition_image">image_transition</string>
+
+    <string name="test">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam. Enim ut tellus elementum sagittis vitae et. Donec pretium vulputate sapien nec sagittis aliquam. Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Aliquet eget sit amet tellus cras adipiscing enim eu turpis. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Fringilla ut morbi tincidunt augue. Sed tempus urna et pharetra pharetra massa massa ultricies. Ut consequat semper viverra nam. Ante metus dictum at tempor commodo. Sit amet nisl suscipit adipiscing bibendum est ultricies integer. Elementum tempus egestas sed sed risus pretium.
+
+Ac odio tempor orci dapibus ultrices. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Facilisis magna etiam tempor orci. Aenean sed adipiscing diam donec adipiscing tristique risus. Nunc sed id semper risus in hendrerit. Vitae nunc sed velit dignissim sodales ut eu sem integer. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. At tempor commodo ullamcorper a lacus vestibulum sed arcu non. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Placerat duis ultricies lacus sed turpis tincidunt id. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Non odio euismod lacinia at quis risus.
+
+Id volutpat lacus laoreet non curabitur gravida arcu ac tortor. Id aliquet lectus proin nibh nisl. Tellus orci ac auctor augue mauris augue neque. Commodo nulla facilisi nullam vehicula ipsum a arcu. Arcu non sodales neque sodales ut etiam sit. Id ornare arcu odio ut sem nulla. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Fermentum odio eu feugiat pretium nibh. Eu facilisis sed odio morbi quis. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.
+
+Nibh ipsum consequat nisl vel pretium. Risus commodo viverra maecenas accumsan. Arcu odio ut sem nulla pharetra. Et magnis dis parturient montes nascetur ridiculus. Imperdiet dui accumsan sit amet. Auctor neque vitae tempus quam pellentesque nec nam aliquam sem. Felis bibendum ut tristique et. Ornare lectus sit amet est placerat in egestas erat. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Vivamus at augue eget arcu dictum varius duis at. Mi quis hendrerit dolor magna eget est. Sit amet nisl purus in mollis nunc sed id semper. Porttitor massa id neque aliquam. Fames ac turpis egestas sed tempus urna et. Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. Porttitor leo a diam sollicitudin tempor. Ac felis donec et odio pellentesque diam. Viverra nam libero justo laoreet sit. Turpis nunc eget lorem dolor sed.
+
+Sagittis orci a scelerisque purus semper eget duis. Lacinia quis vel eros donec ac. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Sit amet risus nullam eget felis. Varius morbi enim nunc faucibus a pellentesque sit amet. Amet risus nullam eget felis. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Sem nulla pharetra diam sit amet nisl suscipit adipiscing. Fusce id velit ut tortor pretium viverra. Sed viverra tellus in hac habitasse platea dictumst. Mi in nulla posuere sollicitudin aliquam ultrices sagittis. At quis risus sed vulputate odio ut enim. Eget arcu dictum varius duis at consectetur. Scelerisque purus semper eget duis at tellus. Lacus sed turpis tincidunt id aliquet risus feugiat in. Viverra orci sagittis eu volutpat odio facilisis. Ipsum nunc aliquet bibendum enim facilisis gravida.</string>
+    <string name="plot">Plot</string>
+</resources>
