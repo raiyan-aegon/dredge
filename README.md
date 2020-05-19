@@ -12,8 +12,11 @@ This app utilizes core Android user interface components and fetches movie infor
 
 
 # Screenshots
-![Screenshot_1589910146](https://user-images.githubusercontent.com/62125235/82362497-f08f8500-99fb-11ea-9bfc-ff33597530f1.png)
 
+![Screenshot_1589910146](https://user-images.githubusercontent.com/62125235/82363619-97285580-99fd-11ea-8a8f-bc843cc84bfb.png)
+![Screenshot_1589910171](https://user-images.githubusercontent.com/62125235/82363659-a909f880-99fd-11ea-8fda-7056768e068d.png)
+![Screenshot_1589910272](https://user-images.githubusercontent.com/62125235/82363715-bde68c00-99fd-11ea-8b16-556d0cc99ca9.png)
+![Screenshot_1589910287](https://user-images.githubusercontent.com/62125235/82363759-cd65d500-99fd-11ea-950d-dfba885af11d.png)
 
 
 
