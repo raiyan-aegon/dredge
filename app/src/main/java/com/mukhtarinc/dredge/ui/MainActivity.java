@@ -14,19 +14,16 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.mukhtarinc.dredge.model.Movie;
-import com.mukhtarinc.dredge.ui.DetailActivity;
-import com.mukhtarinc.dredge.ui.ImageClickListener;
-import com.mukhtarinc.dredge.ui.ViewPagerTabAdapter;
+import com.mukhtarinc.dredge.model.TopRatedMovie;
 import com.mukhtarinc.dredge.R;
 
-public class MainActivity extends AppCompatActivity implements ImageClickListener {
+public class MainActivity extends AppCompatActivity implements PopularImageClickListener,TopRatedImageClickListener {
 
     private ViewPager2 viewPager;
-    private static final String TAG = "MainActivity";
     private TabLayout tabLayout;
-    private TabLayoutMediator mediator;
-    public static final String EXTRA_MOVIE_ITEM = "animal_image_url";
-    public static final String EXTRA_MOVIE_IMAGE_TRANSITION_NAME = "animal_image_transition_name";
+    public static final String EXTRA_MOVIE_ITEM = "movie_image_url";
+    public static final String EXTRA_TOP_MOVIE_ITEM = "top_movie_image_url";
+    public static final String EXTRA_MOVIE_IMAGE_TRANSITION_NAME = "movie_image_transition_name";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements ImageClickListene
 
     void init(){
 
-        viewPager.setAdapter(new ViewPagerTabAdapter(this ,this));
+        viewPager.setAdapter(new ViewPagerTabAdapter(this ,this,this));
 
         TabLayoutMediator mediator = new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
@@ -60,11 +57,6 @@ public class MainActivity extends AppCompatActivity implements ImageClickListene
                         tab.setText("Top Rated");
                         break;
 
-                    case 2:
-
-                        tab.setText("Favorites");
-                        break;
-
                 }
             }
         });
@@ -75,9 +67,25 @@ public class MainActivity extends AppCompatActivity implements ImageClickListene
     }
 
     @Override
-    public void onImageClick(int position, Movie movie, ImageView sharedImageView) {
+    public void onPopularImageClick(int position, Movie movie, ImageView sharedImageView) {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra(EXTRA_MOVIE_ITEM, movie);
+        intent.putExtra(EXTRA_MOVIE_IMAGE_TRANSITION_NAME, ViewCompat.getTransitionName(sharedImageView));
+
+        ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                this,
+                sharedImageView,
+                ViewCompat.getTransitionName(sharedImageView));
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            startActivity(intent, options.toBundle());
+        }
+    }
+
+    @Override
+    public void onTopRatedImageClick(int position, TopRatedMovie movie, ImageView sharedImageView) {
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(EXTRA_TOP_MOVIE_ITEM, movie);
         intent.putExtra(EXTRA_MOVIE_IMAGE_TRANSITION_NAME, ViewCompat.getTransitionName(sharedImageView));
 
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
