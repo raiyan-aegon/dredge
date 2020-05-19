@@ -11,4 +11,9 @@ This app utilizes core Android user interface components and fetches movie infor
 ###### 4. ViewModel
 
 
+# Screenshots
+![Screenshot_1589910146](https://user-images.githubusercontent.com/62125235/82362497-f08f8500-99fb-11ea-9bfc-ff33597530f1.png)
+
+
+
 
