@@ -8,11 +8,13 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 public class ViewPagerTabAdapter extends FragmentStateAdapter {
 
 
-    private ImageClickListener imageClickListener;
+    private PopularImageClickListener popularImageClickListener;
+    private TopRatedImageClickListener topRatedImageClickListener;
 
-        public ViewPagerTabAdapter(@NonNull FragmentActivity fragmentActivity, ImageClickListener imageClickListener) {
+        public ViewPagerTabAdapter(@NonNull FragmentActivity fragmentActivity, PopularImageClickListener popularImageClickListener,TopRatedImageClickListener topRatedImageClickListener) {
             super(fragmentActivity);
-            this.imageClickListener = imageClickListener;
+            this.popularImageClickListener = popularImageClickListener;
+            this.topRatedImageClickListener = topRatedImageClickListener;
         }
 
         @NonNull
@@ -20,19 +22,16 @@ public class ViewPagerTabAdapter extends FragmentStateAdapter {
         public Fragment createFragment(int position) {
             switch (position) {
                 case 0:
-                    return new PopularFragment(imageClickListener);
+                    return new PopularFragment(popularImageClickListener);
                 case 1:
-                   return new TopRatedFragment();
-
-                case 2:
-                    return new FavoriteFragment();
+                   return new TopRatedFragment(topRatedImageClickListener);
 
             }
-            return new PopularFragment(imageClickListener);
+            return new PopularFragment(popularImageClickListener);
         }
 
         @Override
         public int getItemCount() {
-            return 3;
+            return 2;
         }
     }
