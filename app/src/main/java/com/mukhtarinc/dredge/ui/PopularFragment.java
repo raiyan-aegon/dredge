@@ -43,10 +43,10 @@ public class PopularFragment extends Fragment {
     private PopularRecyclerAdapter recyclerAdapter;
     private RecyclerView recyclerView;
 
-    private ImageClickListener imageClickListener;
+    private PopularImageClickListener imageClickListener;
     private static final String TAG = PopularFragment.class.getSimpleName();
 
-    public PopularFragment(ImageClickListener imageClickListener) {
+    public PopularFragment(PopularImageClickListener imageClickListener) {
         // Required empty public constructor
         this.imageClickListener = imageClickListener;
     }
