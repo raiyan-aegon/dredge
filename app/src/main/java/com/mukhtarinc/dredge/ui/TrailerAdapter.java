@@ -57,7 +57,7 @@ public class TrailerAdapter extends RecyclerView.Adapter<TrailerAdapter.CastView
 
     @Override
     public int getItemCount() {
-        return 3;
+        return trailers.size();
     }
 
     void setTrailers(List<Trailer> data){
