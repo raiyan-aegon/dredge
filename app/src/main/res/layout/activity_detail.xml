@@ -81,9 +81,15 @@
         android:textColor="@color/colorPrimary"
         android:textSize="15sp" />
 
+    <ProgressBar
+        android:id="@+id/cast_pb"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:id="@+id/rv_cast"
+        android:visibility="gone"
         android:layout_height="wrap_content"/>
 
     <TextView
@@ -95,10 +101,14 @@
         android:text="@string/trailers"
         android:textColor="@color/colorPrimary"
         android:textSize="15sp" />
-
+    <ProgressBar
+        android:id="@+id/trail_pb"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:id="@+id/rv_trailers"
+        android:visibility="gone"
         android:layout_height="match_parent"/>
 
 </LinearLayout>
