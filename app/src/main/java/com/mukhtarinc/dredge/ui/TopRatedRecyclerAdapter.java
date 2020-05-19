@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mukhtarinc.dredge.R;
@@ -27,6 +28,12 @@ public class TopRatedRecyclerAdapter extends RecyclerView.Adapter<TopRatedRecycl
 
      private List<TopRatedMovie>movies;
 
+    public TopRatedImageClickListener imageClickListener;
+
+
+    public TopRatedRecyclerAdapter(TopRatedImageClickListener imageClickListener){
+        this.imageClickListener = imageClickListener;
+    }
 
     @NonNull
     @Override
@@ -64,6 +71,15 @@ public class TopRatedRecyclerAdapter extends RecyclerView.Adapter<TopRatedRecycl
             System.err.println(e.toString()+"");
         }
 
+
+        ViewCompat.setTransitionName(holder.roundedImageView,movies.get(position).getMovie_title());
+
+        holder.roundedImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imageClickListener.onTopRatedImageClick(holder.getAdapterPosition(),movies.get(position),holder.roundedImageView);
+            }
+        });
 
     }
 
