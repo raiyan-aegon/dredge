@@ -25,11 +25,11 @@ public class PopularRecyclerAdapter extends RecyclerView.Adapter<PopularRecycler
 
      private List<Movie>movies;
 
-     public ImageClickListener imageClickListener;
+     public PopularImageClickListener imageClickListener;
      private Context context;
 
 
-     public PopularRecyclerAdapter(ImageClickListener imageClickListener){
+     public PopularRecyclerAdapter(PopularImageClickListener imageClickListener){
 
          this.imageClickListener =imageClickListener;
      }
@@ -71,7 +71,7 @@ public class PopularRecyclerAdapter extends RecyclerView.Adapter<PopularRecycler
         holder.roundedImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                imageClickListener.onImageClick(holder.getAdapterPosition(),movies.get(position),holder.roundedImageView);
+                imageClickListener.onPopularImageClick(holder.getAdapterPosition(),movies.get(position),holder.roundedImageView);
             }
         });
 
