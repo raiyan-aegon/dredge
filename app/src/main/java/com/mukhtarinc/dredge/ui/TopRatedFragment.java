@@ -36,9 +36,11 @@ public class TopRatedFragment extends Fragment {
     private TopRatedMovieViewModel movieViewModel;
     private TopRatedRecyclerAdapter recyclerAdapter;
     private RecyclerView recyclerView;
+    private TopRatedImageClickListener imageClickListener;
 
-  public TopRatedFragment(){
+  public TopRatedFragment(TopRatedImageClickListener imageClickListener){
 
+      this.imageClickListener =imageClickListener;
 
   }
 
@@ -58,7 +60,7 @@ public class TopRatedFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
 
-        recyclerAdapter  = new TopRatedRecyclerAdapter();
+        recyclerAdapter  = new TopRatedRecyclerAdapter(imageClickListener);
 
 
         return view;
